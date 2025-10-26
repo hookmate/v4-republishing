@@ -46,7 +46,7 @@ async function main() {
       ),
     );
 
-    $`cd ./packages/${packageName}/package && npm publish --access public --provenance --dry-run`.pipe(process.stdout);
+    $`cd ./packages/${packageName}/package && npm publish --access public`.pipe(process.stdout);
   }
 }
 
