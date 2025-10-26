@@ -5,7 +5,7 @@ import ky from "ky";
 import { extract } from "tar";
 
 async function main() {
-  await rm("packages", { recursive: true });
+  await rm("packages", { recursive: true, force: true });
   await mkdir("packages/source", { recursive: true });
   await mkdir("packages/v4-core", { recursive: true });
   await mkdir("packages/v4-periphery", { recursive: true });
