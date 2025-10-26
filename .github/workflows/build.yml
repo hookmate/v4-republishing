@@ -30,8 +30,6 @@ jobs:
           cache: pnpm
 
       - name: Republish Packages
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           npm install -g npm@latest
           pnpm install --frozen-lockfile

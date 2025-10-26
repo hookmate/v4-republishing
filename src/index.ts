@@ -46,11 +46,7 @@ async function main() {
       ),
     );
 
-    $({
-      env: {
-        NODE_AUTH_TOKEN: process.env.NODE_AUTH_TOKEN,
-      },
-    })`cd ./packages/${packageName}/package && npm publish --access public --provenance`.pipe(process.stdout);
+    $`cd ./packages/${packageName}/package && pnpm publish --access public`.pipe(process.stdout);
   }
 }
 
