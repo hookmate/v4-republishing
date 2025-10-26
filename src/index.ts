@@ -46,7 +46,7 @@ async function main() {
       ),
     );
 
-    $`cd ./packages/${packageName}/package && pnpm publish --access public`.pipe(process.stdout);
+    await $`cd ./packages/${packageName}/package && npm publish --access public`.pipe(process.stdout);
   }
 }
 
