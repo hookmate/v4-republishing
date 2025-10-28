@@ -11,6 +11,9 @@ importers:
       ky:
         specifier: ^1.13.0
         version: 1.13.0
+      semver:
+        specifier: ^7.7.3
+        version: 7.7.3
       tar:
         specifier: ^7.5.1
         version: 7.5.1
@@ -24,9 +27,15 @@ importers:
         specifier: ^8.8.5
         version: 8.8.5
     devDependencies:
+      '@npm/types':
+        specifier: ^2.1.0
+        version: 2.1.0
       '@types/node':
         specifier: ^22.18.12
         version: 22.18.12
+      '@types/semver':
+        specifier: ^7.7.1
+        version: 7.7.1
 
 packages:
 
@@ -190,8 +199,15 @@ packages:
     resolution: {integrity: sha512-wgm9Ehl2jpeqP3zw/7mo3kRHFp5MEDhqAdwy1fTGkHAwnkGOVsgpvQhL8B5n1qlb01jV3n/bI0ZfZp5lWA1k4w==}
     engines: {node: '>=18.0.0'}
 
+  '@npm/types@2.1.0':
+    resolution: {integrity: sha512-humQVe2BrWR7Yum5hGDYBnIPnnZJvKSOH/I4QN1ZL2bdb4c4zQHaHupEJ3cOkSJ07G3YfN793ptbNh196BWLgA==}
+    engines: {node: '>=18.6.0'}
+
   '@types/node@22.18.12':
     resolution: {integrity: sha512-BICHQ67iqxQGFSzfCFTT7MRQ5XcBjG5aeKh5Ok38UBbPe5fxTyE+aHFxwVrGyr8GNlqFMLKD1D3P2K/1ks8tog==}
+
+  '@types/semver@7.7.1':
+    resolution: {integrity: sha512-FmgJfu+MOcQ370SD0ev7EI8TlCAfKYU+B4m5T3yXc1CiRN94g/SZPtsCkk506aUDtlMnFZvasDwHHUcZUEaYuA==}
 
   chownr@3.0.0:
     resolution: {integrity: sha512-+IxzY9BZOQd/XuYPRmrvEVjF/nqj5kgT4kEq7VofrDoM1MxoRjEWkrCC3EtLi59TVawxTAn+orJwFQcrqEN1+g==}
@@ -224,6 +240,11 @@ packages:
 
   resolve-pkg-maps@1.0.0:
     resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==}
+
+  semver@7.7.3:
+    resolution: {integrity: sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q==}
+    engines: {node: '>=10'}
+    hasBin: true
 
   tar@7.5.1:
     resolution: {integrity: sha512-nlGpxf+hv0v7GkWBK2V9spgactGOp0qvfWRxUMjqHyzrt3SgwE48DIv/FhqPHJYLHpgW1opq3nERbz5Anq7n1g==}
@@ -335,9 +356,13 @@ snapshots:
     dependencies:
       minipass: 7.1.2
 
+  '@npm/types@2.1.0': {}
+
   '@types/node@22.18.12':
     dependencies:
       undici-types: 6.21.0
+
+  '@types/semver@7.7.1': {}
 
   chownr@3.0.0: {}
 
@@ -386,6 +411,8 @@ snapshots:
       minipass: 7.1.2
 
   resolve-pkg-maps@1.0.0: {}
+
+  semver@7.7.3: {}
 
   tar@7.5.1:
     dependencies:
